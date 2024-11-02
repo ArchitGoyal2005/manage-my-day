@@ -17,7 +17,7 @@ const updatedAt = timestamp("updatedAt")
   .defaultNow()
   .$onUpdate(() => new Date());
 
-export const EventTagle = pgTable(
+export const EventTable = pgTable(
   "events",
   {
     id: uuid("id").primaryKey().defaultRandom(),
