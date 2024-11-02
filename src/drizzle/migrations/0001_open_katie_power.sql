@@ -1,0 +1,1 @@
+ALTER TABLE "schedules" ADD CONSTRAINT "schedules_clerkUserId_unique" UNIQUE("clerkUserId");
