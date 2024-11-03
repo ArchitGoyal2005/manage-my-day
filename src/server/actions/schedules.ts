@@ -16,7 +16,7 @@ export async function saveSchedule(
 
   if (!success || userId == null) return { error: true };
 
-  const { availabilites, ...scheduleData } = data;
+  const { availabilities, ...scheduleData } = data;
 
   const [{ id: scheduleId }] = await db
     .insert(ScheduleTable)
@@ -33,12 +33,15 @@ export async function saveSchedule(
       .where(eq(ScheduleAvailabilityTable.scheduleId, scheduleId)),
   ];
 
-  if (availabilites.length > 0) {
+  if (availabilities.length > 0) {
     statements.push(
       db
         .insert(ScheduleAvailabilityTable)
         .values(
-          availabilites.map((availability) => ({ ...availability, scheduleId }))
+          availabilities.map((availability) => ({
+            ...availability,
+            scheduleId,
+          }))
         )
     );
   }
