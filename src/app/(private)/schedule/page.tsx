@@ -16,15 +16,15 @@ export default async function Page() {
   });
 
   return (
-    <div className="m-4">
-      <h2 className="text-4xl font-semibold">
+    <div className="mx-auto m-4">
+      <h2 className="text-4xl text-center font-semibold">
         When are you available to meet with people?
       </h2>
-      <p className="text-gray-600">
-        We'll automatically prevent meetings from being booked outside of your
-        available hours.
+      <p className="text-gray-600 text-center pt-2">
+        We&apos;ll automatically prevent meetings from being booked outside of
+        your available hours.
       </p>
-      <Card className="max-w-md mx-auto m-4 mt-10">
+      <Card className="max-w-md mx-auto mt-10">
         <CardHeader>
           <CardTitle>Schedule</CardTitle>
         </CardHeader>

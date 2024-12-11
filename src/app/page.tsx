@@ -11,7 +11,7 @@ export default async function page() {
 
   return (
     <div className="m-2">
-      <div className="flex justify-between py-3 px-2 shadow-md border rounded-md">
+      <div className="flex justify-between py-3 px-2">
         <h1 className="text-3xl mt-2 ml-12 font-sans font-bold text-blue-800">
           <span>Apoint</span>
           <span className="text-yellow-400">Me</span>
@@ -35,8 +35,8 @@ export default async function page() {
       <div className="flex h-5/6 gap-4 justify-between">
         <div className="py-40 text-6xl font-sans font-bold flex flex-col ml-12 text-gray-800">
           <span className="py-4">Easy </span>
-          <span className="py-4">scheduling </span>
-          <span className="py-4">ahead </span>
+          <span className="py-4">Scheduling </span>
+          <span className="py-4">Ahead </span>
 
           <p className="text-xl py-4 font-sans font-normal text-gray-800">
             Professionals who easily book meetings with AppointMe
@@ -44,10 +44,10 @@ export default async function page() {
         </div>
         <div>
           <Image
-            src="/person.png" // Correct path to image in the public directory
+            src="/person.png"
             alt="Person scheduling"
-            width={700} // Set appropriate width
-            height={700} // Set appropriate height
+            width={700}
+            height={700}
           />
         </div>
       </div>
