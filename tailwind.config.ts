@@ -17,6 +17,7 @@ const config: Config = {
         "2xl": "1400px",
       },
     },
+
     extend: {
       fontFamily: { sans: ["var(--font-sans)", ...fontFamily.sans] },
       colors: {

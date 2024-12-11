@@ -26,22 +26,23 @@ export default async function page() {
   });
   return (
     <>
-      <div className="flex gap-4 items-baseline">
-        <h1 className="text-3xl lg:text-4xl xl:text-5xl mb-6 font-semibold">
-          Events
-        </h1>
-        <Button asChild>
-          <Link href="/events/new">
-            <CalendarPlus className="size-8" />
-            New Event
-          </Link>
-        </Button>
-      </div>
+      <div className="flex gap-4 items-baseline"></div>
       {events?.length > 0 ? (
-        <div className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(400px,1fr))]">
-          {events.map((event) => (
-            <EventCard key={event.id} {...event} />
-          ))}
+        <div>
+          <h1 className="text-3xl lg:text-4xl xl:text-5xl mb-6 font-semibold">
+            Events
+          </h1>
+          <Button asChild>
+            <Link href="/events/new">
+              <CalendarPlus className="size-8" />
+              New Event
+            </Link>
+          </Button>
+          <div className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(400px,1fr))] mt-4">
+            {events.map((event) => (
+              <EventCard key={event.id} {...event} />
+            ))}
+          </div>
         </div>
       ) : (
         <div className="flex flex-col items-center gap-4 mt-4">
