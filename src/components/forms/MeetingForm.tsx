@@ -219,7 +219,7 @@ export default function EventForm({
           />
           <FormField
             control={form.control}
-            name="guestEmail"
+            name="guest"
             render={({ field }) => (
               <FormItem className="flex-1">
                 <FormLabel>Your Email</FormLabel>

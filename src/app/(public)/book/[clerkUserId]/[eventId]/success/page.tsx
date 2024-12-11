@@ -39,10 +39,7 @@ export default async function page({
         </CardTitle>
         <CardDescription>{formatDateTime(startTimeDate)}</CardDescription>
       </CardHeader>
-      <CardContent>
-        You should receive an email confirmation shortly. You can safely close
-        this page now.
-      </CardContent>
+      <CardContent>You can safely close this page now.</CardContent>
     </Card>
   );
 }

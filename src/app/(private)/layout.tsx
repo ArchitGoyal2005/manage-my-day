@@ -10,7 +10,7 @@ export default async function layout({ children }: { children: ReactNode }) {
         <nav className="font-medium flex items-center gap-6 text-sm container">
           <div className="flex items-center gap-2 font-semibold mr-auto">
             <CalendarRange className="size-6" />
-            <span className="sr-only md:not-sr-only">Managey</span>
+            <span className="sr-only md:not-sr-only">Appoint Me</span>
           </div>
           <NavLink href="/events">Events</NavLink>
           <NavLink href="/schedule">Schedule</NavLink>
